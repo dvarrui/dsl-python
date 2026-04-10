@@ -1,14 +1,12 @@
-
-def version()
-  puts VERSION
-  "(Version)"
-end
-
 # frozen_string_literal: true
 
 module Dsl
   module Python
-    class Error < StandardError; end
-    # Your code goes here...
+    VERSION="0.16.0"
   end
+end
+
+def version()
+  puts Dsl::Python::VERSION
+  "(Version)"
 end
