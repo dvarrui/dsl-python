@@ -4,7 +4,9 @@
 DSL para programar en Python usando Ruby.
 ```
 
-Este es un proyecto que no tiene utilidad práctica. El objetivo era poner a prueba, una vez más, las características del lenguaje Ruby para crear un DSL de Python en un corto espacio de tiempo.
+Este es un proyecto que no tiene utilidad práctica. El objetivo era poner a prueba las características del lenguaje Ruby para crear un DSL de Python en un corto espacio de tiempo.
+
+> NOTA: `Dsl::Python` usa bloques delimitados por `end`, en lugar del clásico sangrado de Python.
 
 ## Instalación
 
