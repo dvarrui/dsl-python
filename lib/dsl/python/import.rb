@@ -3,12 +3,13 @@
 this = "this"
 
 def import(name)
+  fullname = name + ".py"
   if name.to_s == "this"
     show_zen
   elsif File.exist? name
     load name
   else
-    load name + ".py"
+    puts "npython: can't open file '#{name}': [Errno 2] No such file or directory"
   end
 end
 
