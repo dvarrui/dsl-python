@@ -16,15 +16,15 @@ def show_zen
   text = <<~TEXT
   El Zen de nPython (Inspirado por Matz)
 
-  01. La felicidad del programador es el fin último.
-  02. Lo natural es mejor que lo explícito.
-  03. La libertad es mejor que la restricción.
-  04. La elegancia supera a la brevedad.
-  05. Muchos caminos son mejores que uno solo (TIMTOWTDI).
-  06. Si el código se lee como prosa, es buen código.
-  07. No castigues al programador por ser inteligente.
-  08. La pureza del objeto es sagrada.
-  09. La metaprogramación es un superpoder, úsalo con sabiduría.
+   1. La felicidad del programador es el fin último.
+   2. Lo natural es mejor que lo explícito.
+   3. La libertad es mejor que la restricción.
+   4. La elegancia supera a la brevedad.
+   5. Muchos caminos son mejores que uno solo (TIMTOWTDI).
+   6. Si el código se lee como prosa, es buen código.
+   7. No castigues al programador por ser inteligente.
+   8. La pureza del objeto es sagrada.
+   9. La metaprogramación es un superpoder, úsalo con sabiduría.
   10. El lenguaje debe adaptarse al humano, no el humano al lenguaje.
   11. Un bloque es a menudo la respuesta.
   12. Los símbolos son mejores que los strings para la identidad.
