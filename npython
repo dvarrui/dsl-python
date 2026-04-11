@@ -6,7 +6,7 @@ VERSION="0.16.0"
 
 def open_repl
   text = <<~TEXT
-  nPython 0.16.0 (main, Nov 16 2025, 18:38:03) [GCC] on linux
+  nPython #{Dsl::Python::VERSION} (main, Nov 16 1970) [GCC] on linux
   Type "help", "copyright", "credits" or "license" for more information.
   TEXT
   puts text
