@@ -3,7 +3,7 @@
 this = "this"
 
 def import(name)
-  fullname = name + ".py"
+  fullname = name.to_s + ".py"
   if name.to_s == "this"
     show_zen
   elsif File.exist? name
