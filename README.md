@@ -44,7 +44,7 @@ Obiwan
 * Intérpre interactivo `npython`.
 * Booleans
 * Diccionarios
-* import
+* import "this"
 * None
 * Ranges
 * Strings

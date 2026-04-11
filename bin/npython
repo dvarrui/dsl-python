@@ -2,11 +2,11 @@
 require "dsl/python"
 require "dsl/python/version"
 
-VERSION="0.16.0"
+VERSION=Dsl::Python::VERSION
 
 def open_repl
   text = <<~TEXT
-  nPython #{Dsl::Python::VERSION} (main, Nov 16 1970) [GCC] on linux
+  nPython #{VERSION} (main, Nov 16 1970) [GCC] on linux
   Type "help", "copyright", "credits" or "license" for more information.
   TEXT
   puts text
@@ -14,7 +14,7 @@ def open_repl
 end
 
 def show_version
-  puts "npython (#{Dsl::Python::VERSION})"
+  puts "npython (#{VERSION})"
 end
 
 def show_help
