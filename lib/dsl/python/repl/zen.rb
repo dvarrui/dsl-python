@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-
 def show_zen
   text = <<~TEXT
   El Zen de nPython (Inspirado por Matz)
@@ -22,4 +21,16 @@ def show_zen
   TEXT
   puts text
   "(Zen)"
+end
+
+def whoareyou
+  puts <<-TEXT
+   Hi! I'm a ruby gem called 'dsl-python'.
+  TEXT
+end
+
+def whereareyou
+  puts <<-TEXT
+   You can find me at: https://github.com/dvarrui/dsl-python
+  TEXT
 end
