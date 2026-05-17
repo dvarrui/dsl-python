@@ -13,11 +13,12 @@ def type(x)
     TrueClass: "bool"
   }
 
-  if %i[Array Hash].include? key
-    "<class '#{types[key]}'>"
-  else
-    "<type '#{types[key]}'>"
-  end
+  # if %i[Array Hash].include? key
+  #   "<class '#{types[key]}'>"
+  # else
+  #   "<type '#{types[key]}'>"
+  # end
+  "<class '#{types[key]}'>"
 end
 
 def float(obj) = obj.to_f
