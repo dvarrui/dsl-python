@@ -19,6 +19,10 @@ require_relative "python/version"
 
 This = "this"
 
+def this
+  "this"
+end
+
 def print(*args)
   if args.is_a? Array
     puts args.join(" ")
