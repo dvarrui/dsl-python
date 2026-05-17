@@ -2,12 +2,12 @@
 
 require_relative "../repl/zen"
 
-this = "this"
-
 def import(name)
   fullname = name.to_s + ".py"
   if name.to_s == "this"
     show_zen
+  elsif name.to_s == "that"
+    show_zen(ofuscate: true)
   elsif File.exist? name
     load name
   else

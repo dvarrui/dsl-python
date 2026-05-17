@@ -4,7 +4,15 @@ def this
   "this"
 end
 
-def show_zen
+def that
+  "that"
+end
+
+def zen
+  show_zen
+end
+
+def show_zen(ofuscate: false)
   text = <<~TEXT
   El Zen de nPython (Inspirado por Matz)
 
@@ -23,8 +31,16 @@ def show_zen
   13. El principio de Menor Sorpresa es subjetivo, pero vital.
   14. Si te hace sonreír al escribirlo, es Ruby.
   TEXT
-  puts text
-  "(Zen)"
+  
+  if ofuscate
+    lines = text.split("\n")
+    lines.each do |line|
+      puts line.chars.shuffle.join
+    end
+  else
+    puts text
+  end
+  nil
 end
 
 def whoareyou
