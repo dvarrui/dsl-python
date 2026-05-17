@@ -6,8 +6,9 @@ require_relative "python/repl/license"
 
 require_relative "python/types/array"
 require_relative "python/types/boolean"
-require_relative "python/types/none"
 require_relative "python/types/hash"
+require_relative "python/types/integer"
+require_relative "python/types/none"
 require_relative "python/types/range"
 require_relative "python/types/string"
 
@@ -16,8 +17,6 @@ require_relative "python/functions/len"
 require_relative "python/functions/type"
 
 require_relative "python/version"
-
-This = "this"
 
 def this
   "this"

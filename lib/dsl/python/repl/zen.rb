@@ -1,5 +1,9 @@
 # frozen_string_literal: true
 
+def this
+  "this"
+end
+
 def show_zen
   text = <<~TEXT
   El Zen de nPython (Inspirado por Matz)
@@ -32,5 +36,13 @@ end
 def whereareyou
   puts <<-TEXT
    You can find me at: https://github.com/dvarrui/dsl-python
+   And also at: https://rubygems.org/gems/dsl-python
   TEXT
+end
+
+def bye
+  puts ''
+  system("figlet 'I love Ruby'")
+  puts ''
+  exit
 end
