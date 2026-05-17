@@ -34,13 +34,21 @@ def show_zen(ofuscate: false)
   14. Si te hace sonreír al escribirlo, es Ruby.
   TEXT
   
-  if ofuscate
-    lines = text.split("\n")
-    lines.each do |line|
-      puts line.chars.shuffle.join
+  lines = text.split("\n")
+  lines.each_with_index do |line, index|
+    if line.empty?
+      puts ""
+      next
     end
-  else
-    puts text
+    words = line.split
+    if index.zero?
+      index = words.shift
+    else
+      index = ANSI.new.green(words.shift)
+    end
+    text = words.join(" ")
+    text.tr!("abcdefghijklmnopqrstuvwxyz", "*") if ofuscate      
+    puts "  #{index} #{text}"
   end
   nil
 end
