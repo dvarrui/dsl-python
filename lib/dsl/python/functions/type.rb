@@ -12,7 +12,12 @@ def type(x)
     String: "str",
     TrueClass: "bool"
   }
-  "<type '#{types[key]}'>"
+
+  if %i[Array Hash].include? key
+    "<class '#{types[key]}'>"
+  else
+    "<type '#{types[key]}'>"
+  end
 end
 
 def float(obj) = obj.to_f

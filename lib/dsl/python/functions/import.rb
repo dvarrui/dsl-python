@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require_relative "repl/zen"
+require_relative "../repl/zen"
 
 this = "this"
 
