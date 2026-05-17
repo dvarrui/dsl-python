@@ -10,3 +10,7 @@ def len(obj)
     puts "TypeError: object of type '#{type(obj)}' has no len()"
   end
 end
+
+def id(obj)
+  obj.object_id
+end
