@@ -18,4 +18,20 @@ int.__float__()          int.__int__()            int.__radd__(            int._
 int.__floor__()          int.__invert__()         int.__rand__(            int.__rshift__(  
   TEXT
   end
+
+  def __add__(other)
+    self + other
+  end
+
+  def __floordiv__(other)
+    self / other
+  end
+
+  def __mul__(other)
+    self * other
+  end
+
+  def __sub__(other)
+    self - other
+  end
 end
