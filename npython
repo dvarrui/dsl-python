@@ -10,11 +10,11 @@ def open_repl
   Type "help", "copyright", "credits" or "license" for more information.
   TEXT
   puts text
-  system("irb --prompt simple --nocolorize --noecho-on-assignment -Ilib -rdsl/python")
+  system("irb --nobanner --prompt simple --nocolorize --noecho-on-assignment -Ilib -rdsl/python")
 end
 
 def show_version
-  puts "npython (#{VERSION})"
+  puts "npython #{VERSION}"
 end
 
 def show_help

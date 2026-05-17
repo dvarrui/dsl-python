@@ -1,15 +1,16 @@
 # frozen_string_literal: true
 
+require_relative "python/repl/copyright"
+require_relative "python/repl/credits"
+require_relative "python/repl/license"
+
+require_relative "python/types/booleans"
+require_relative "python/types/none"
+require_relative "python/types/hashes"
+require_relative "python/types/ranges"
+require_relative "python/types/strings"
+
 require_relative "python/import"
-require_relative "python/booleans"
-require_relative "python/copyright"
-require_relative "python/credits"
-require_relative "python/none"
-require_relative "python/hashes"
-require_relative "python/import"
-require_relative "python/license"
-require_relative "python/ranges"
-require_relative "python/strings"
 require_relative "python/type"
 require_relative "python/version"
 
