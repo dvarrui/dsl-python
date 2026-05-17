@@ -10,8 +10,10 @@ require_relative "python/types/hashes"
 require_relative "python/types/ranges"
 require_relative "python/types/strings"
 
-require_relative "python/import"
-require_relative "python/type"
+require_relative "python/functions/import"
+require_relative "python/functions/len"
+require_relative "python/functions/type"
+
 require_relative "python/version"
 
 def print(*args)
