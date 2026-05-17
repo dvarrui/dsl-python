@@ -18,10 +18,6 @@ require_relative "python/functions/type"
 
 require_relative "python/version"
 
-def this
-  "this"
-end
-
 def print(*args)
   if args.is_a? Array
     puts args.join(" ")
