@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative "../ansi"
+
 def this
   "this"
 end
@@ -44,16 +46,16 @@ def show_zen(ofuscate: false)
 end
 
 def whoareyou
-  puts <<-TEXT
-   Hi! I'm a ruby gem called 'dsl-python'.
-  TEXT
+  name = ANSI.new.green("dsl-python")
+  puts "   Hi! I'm a ruby gem called '#{name}'."
 end
 
 def whereareyou
-  puts <<-TEXT
-   You can find me at: https://github.com/dvarrui/dsl-python
-   And also at: https://rubygems.org/gems/dsl-python
-  TEXT
+  text = ANSI.new.green("https://github.com/dvarrui/dsl-python")
+  puts "   You can find me at: #{text}"
+  text = ANSI.new.green("https://rubygems.org/gems/dsl-python")
+  puts "   And also at: #{text}"
+  nil
 end
 
 def bye
