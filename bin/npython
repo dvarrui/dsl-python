@@ -1,50 +1,13 @@
 #!/usr/bin/env ruby
-require "dsl/python"
-require "dsl/python/version"
 
-VERSION=Dsl::Python::VERSION
-
-def open_repl
-  text = <<~TEXT
-  nPython #{VERSION} (main, Nov 16 1970) [GCC] on linux
-  Type "help", "copyright", "credits" or "license" for more information.
-  TEXT
-  puts text
-  system("irb --prompt simple --nocolorize --noecho-on-assignment -Ilib -rdsl/python")
-end
-
-def show_version
-  puts "npython (#{VERSION})"
-end
-
-def show_help
-  text = <<~TEXT
-  usage: npython [option | file ]
-  Options:
-  -h     : print this help message and exit (also -? or --help)
-  -v     : show current version (also -V or --version)
-  
-  Arguments:
-  file   : program read from script file
-  TEXT
-  puts text  
-end
-
-def run_program(name)
-  unless File.exist? name
-    puts "npython: can't open file '#{name}': [Errno 2] No such file or directory"
-    exit 1
-  end
-
-  content = File.read(name)
-  eval(content)
-end
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require "dsl/python/cli"
 
 if ARGV.size.zero?
   open_repl
-elsif ["-v", "--version", "-V"].include? ARGV.first
+elsif ["v", "-v", "--version", "-V"].include? ARGV.first
   show_version
-elsif ["-h", "--help", "-?"].include? ARGV.first
+elsif ["h", "-h", "--help", "-?"].include? ARGV.first
   show_help
 else
   run_program ARGV.first

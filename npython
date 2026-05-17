@@ -1,5 +1,7 @@
 #!/usr/bin/env ruby
-require_relative "lib/dsl/python/cli"
+
+$LOAD_PATH.unshift File.expand_path('../lib', __FILE__)
+require "dsl/python/cli"
 
 if ARGV.size.zero?
   open_repl
