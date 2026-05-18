@@ -1,14 +1,14 @@
 #!/usr/bin/env ruby
 
-$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
 require "dsl/python/cli"
 
 if ARGV.size.zero?
-  Dsl::Python::open_repl
+  Dsl::Python.open_repl
 elsif ["v", "-v", "--version", "-V"].include? ARGV.first
-  Dsl::Python::show_version
+  Dsl::Python.show_version
 elsif ["h", "-h", "--help", "-?"].include? ARGV.first
-  Dsl::Python::show_help
+  Dsl::Python.show_help
 else
-  Dsl::Python::run_program ARGV.first
+  run_program ARGV.first
 end

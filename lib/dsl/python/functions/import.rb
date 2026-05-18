@@ -2,15 +2,22 @@
 
 require_relative "../repl/zen"
 
-def import(name)
-  name.to_s
-  if name.to_s == "this"
+$main_binding = binding
+
+def import(filename)
+  filename.to_s
+  dirbase = File.dirname($main_filepath)
+  filepath = File.join(dirbase, filename + ".py")
+
+  if filename.to_s == "this"
     Dsl::Python.show_zen
-  elsif name.to_s == "that"
+  elsif filename.to_s == "that"
     Dsl::Python.show_zen(ofuscate: true)
-  elsif File.exist? name
-    load name
+  elsif File.exist? filepath
+
+    content = File.read(filepath)
+    eval(content, $main_binding)
   else
-    puts "npython: can't open file '#{name}': [Errno 2] No such file or directory"
+    puts "npython: can't open file '#{filepath}': [Errno 2] No such file or directory"
   end
 end

@@ -30,15 +30,16 @@ module Dsl
       TEXT
       puts text
     end
-
-    def self.run_program(name)
-      unless File.exist? name
-        puts "npython: can't open file '#{name}': [Errno 2] No such file or directory"
-        exit 1
-      end
-
-      content = File.read(name)
-      eval(content)
-    end
   end
+end
+
+def run_program(filepath)
+  unless File.exist? filepath
+    puts "npython: can't open file '#{filepath}': [Errno 2] No such file or directory"
+    exit 1
+  end
+
+  $main_filepath = filepath
+  content = File.read(filepath)
+  eval(content)
 end

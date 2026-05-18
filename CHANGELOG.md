@@ -1,10 +1,11 @@
 ## [Unreleased]
 
-## [0.19.0] - 2026-05-xx
+## [0.19.0] - 2026-05-18
 
 - Add: examples.
 - Revise id(int) python3 vs npython.
 - Doc: pybirras v0.
+- Fefat: import reading relative filepaths.
 
 ## [0.18.0] - 2026-05-18
 
