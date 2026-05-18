@@ -23,15 +23,14 @@ require_relative "python/version"
 def print(*args)
   if args.is_a? Array
     if args.count == 1
-      puts args.first.to_s
+      puts args.first
     else
-      puts args.join " " 
+      puts args.join " "
     end
   else
     puts(args)
   end
 end
-
 
 module Dsl
   module Python

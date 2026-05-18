@@ -2,11 +2,11 @@
 
 module Dsl
   module Python
-    VERSION="0.18.0"
+    VERSION = "0.18.0"
   end
 end
 
-def version()
+def version
   puts Dsl::Python::VERSION
   "(Version)"
 end

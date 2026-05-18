@@ -2,7 +2,7 @@
 
 class Hash
   def to_s
-    values = self.map do
+    values = map do
       value1 = _1
       value1 = "'#{_1}'" if _1.is_a? String
       value2 = _2

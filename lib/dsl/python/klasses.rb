@@ -7,4 +7,3 @@
 # instancia = Persona()
 # print(instancia.saludar())  # Resultado: ¡Hola!
 # print(type(instancia))       # Resultado: <class '__main__.Persona'>
-

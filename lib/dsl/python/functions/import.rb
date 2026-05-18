@@ -3,11 +3,11 @@
 require_relative "../repl/zen"
 
 def import(name)
-  fullname = name.to_s + ".py"
+  name.to_s
   if name.to_s == "this"
-    Dsl::Python::show_zen
+    Dsl::Python.show_zen
   elsif name.to_s == "that"
-    Dsl::Python::show_zen(ofuscate: true)
+    Dsl::Python.show_zen(ofuscate: true)
   elsif File.exist? name
     load name
   else

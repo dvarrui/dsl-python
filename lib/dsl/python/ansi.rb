@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require "io/console"
 
 # Códigos ANSI de color:
@@ -51,22 +52,26 @@ class ANSI
     print "\e[0m"
   end
 
-  def self.print_text_at(row, col, text) 
+  def self.print_text_at(row, col, text)
     print "\033[#{row + 1};#{col}H"
     print text
     print "\e[0m"
   end
 
   def self.pressed_key
-    char = STDIN.read_nonblock(3) rescue nil
+    char = begin
+      STDIN.read_nonblock(3)
+    rescue
+      nil
+    end
     return nil unless char
-  
+
     case char
     when "\e[A" then :up
     when "\e[B" then :down
     when "\e[C" then :right
     when "\e[D" then :left
-    when "q"    then :quit
+    when "q" then :quit
     else char
     end
   end

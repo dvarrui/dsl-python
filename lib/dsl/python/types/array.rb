@@ -13,11 +13,10 @@ class Array
    list.__doc__              list.__imul__(            list.__reduce__()                                    
    list.__eq__(              list.__init__(            list.__reduce_ex__(                                  
    list.__format__(          list.__init_subclass__()  list.__repr__() 
-   METHODS
+    METHODS
   end
 
   def to_s
-    self.inspect.to_s
+    inspect
   end
 end
-

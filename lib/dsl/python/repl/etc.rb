@@ -16,8 +16,8 @@ def whereareyou
 end
 
 def bye
-  puts ''
+  puts ""
   system("figlet 'I love Ruby'")
-  puts ''
+  puts ""
   exit
 end

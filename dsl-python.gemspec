@@ -27,10 +27,10 @@ Gem::Specification.new do |spec|
   #     (f == gemspec) ||
   #      f.start_with?(*%w[bin/ Gemfile .gitignore test/ .standard.yml])
   #  end
-  #end
-  #spec.bindir = "exe"
-  #spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
-  #spec.require_paths = ["lib"]
+  # end
+  # spec.bindir = "exe"
+  # spec.executables = spec.files.grep(%r{\Aexe/}) { |f| File.basename(f) }
+  # spec.require_paths = ["lib"]
 
   spec.extra_rdoc_files = ["README.md", "LICENSE"] + Dir.glob(File.join("docs", "**", "*.md"))
   spec.executables << "npython"
