@@ -1,12 +1,12 @@
 # Dsl::Python
 
 ```
-DSL para programar en Python usando Ruby.
+DSL para hacer que Ruby "parezca" Python
 ```
 
-Este es un proyecto que no tiene utilidad práctica. El objetivo era poner a prueba las características del lenguaje Ruby para crear un DSL de Python en un corto espacio de tiempo.
+Este proyecto que no tiene utilidad práctica. El objetivo es poner a prueba las capacidades del lenguaje Ruby para crear un DSL de Python en un corto espacio de tiempo.
 
-> NOTA: `Dsl::Python` usa bloques delimitados por `end`, en lugar del clásico sangrado de Python.
+> **NOTA**: La principal diferencia con el original, es que se usa la palabra reservada `end` para delimitar el final de bloque, en lugar de los `:` y sangrado.
 
 ## Instalación
 
@@ -18,13 +18,13 @@ Este es un proyecto que no tiene utilidad práctica. El objetivo era poner a pru
 Crear un programa con el contenido de un programa Python:
 
 ```python
-x = 4        #=> x is of type int
-print(x)
-print(type(x))
+name = "Obiwan Kwnobi"
+print(name)
+print(type(name)) #=> name is str class
 
-x = "Obiwan" #=> x is now of type str
-print(x)
-print(type(x))
+words = name.split()
+print(words)
+print(type(words)) #=> words is list class
 ```
 
 * Ejecutar con el "intérprete": `npython FILENAME`.
@@ -32,9 +32,9 @@ print(type(x))
 ```bash
 $ npython examples/03-variables.py      
 4
-<type 'int'>
+<class 'int'>
 Obiwan
-<type 'str'>
+<class 'str'>
 ```
 
 > Más [ejemplos](./examples/)
@@ -42,13 +42,14 @@ Obiwan
 ## Features
 
 * Intérpre interactivo `npython`.
-* Booleans
-* Diccionarios
-* import "this"
-* None
-* Ranges
-* Strings
-* Type
+    - Se muestra el Zen de nPython: `import this`, `import that`, `zen`.
+* Tipos de datos:
+    - Booleans: `True`, `False`
+    - Diccionarios: `dict = {"name": "Obiwan", "age": 55}`
+    - None
+    - Ranges
+    - Strings: `join`.
+* Funciones comunes: `id`, `len`, `type`
 
 ## Contributing
 
@@ -58,4 +59,6 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/dvarru
 
 Enlaces de interés:
 
+* [dsl-clang](https://github.com/dvarrui/dsl-clang)
+* [dsl-graph](https://github.com/dvarrui/dsl-graph)
 * [dsl-latin](https://github.com/dvarrui/dsl-latin)

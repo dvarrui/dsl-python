@@ -1,5 +1,12 @@
 ## [Unreleased]
 
+## [0.18.0] - 2026-05-18
+
+- Refactor code.
+- Add: `import that`. `import this` ofuscated.
+- Add: `zen` as alias of `import this`.
+- Add: `OBJECT.__` methods.
+
 ## [0.17.1] - 2026-04-11
 
 - Fix: import :this -> import 'this'.
