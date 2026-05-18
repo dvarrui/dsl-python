@@ -1,3 +1,4 @@
+# frozen_string_literal: true
 
 def type(x)
   key = x.class.to_s.to_sym
@@ -13,11 +14,6 @@ def type(x)
     TrueClass: "bool"
   }
 
-  # if %i[Array Hash].include? key
-  #   "<class '#{types[key]}'>"
-  # else
-  #   "<type '#{types[key]}'>"
-  # end
   "<class '#{types[key]}'>"
 end
 
