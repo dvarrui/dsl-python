@@ -15,5 +15,9 @@ class Array
    list.__format__(          list.__init_subclass__()  list.__repr__() 
    METHODS
   end
+
+  def to_s
+    self.inspect.to_s
+  end
 end
 

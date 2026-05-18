@@ -22,7 +22,11 @@ require_relative "python/version"
 
 def print(*args)
   if args.is_a? Array
-    puts args.join(" ")
+    if args.count == 1
+      puts args.first.to_s
+    else
+      puts args.join " " 
+    end
   else
     puts(args)
   end
