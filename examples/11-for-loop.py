@@ -10,6 +10,9 @@ print(a)
 # x = range(6) 	range
 x = range(6)
 print(type(x))
+for i in x
+  print(i)
+end
 
 # x = {"name" : "John", "age" : 36} 	dict
 x = { "name": "Obiwan", "age": 52 }

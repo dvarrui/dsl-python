@@ -1,7 +1,7 @@
-x = 4        #=> x is of type int
-print(x)
-print(type(x))
+name = "Obiwan Kenobi"
+print(name)
+print(type(name))
 
-x = "Obiwan" #=> x is now of type str
-print(x)
-print(type(x))
+words = name.split()
+print(words)
+print(type(words))
