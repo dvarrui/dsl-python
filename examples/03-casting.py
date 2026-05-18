@@ -1,4 +1,4 @@
-a = "4a"
+a = "16"
 print(a)
 print(type(a))
 
