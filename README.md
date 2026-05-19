@@ -23,17 +23,17 @@ Crear un programa con el contenido de un programa Python:
 ```python
 name = "Obiwan Kwnobi"
 print(name)
-print(type(name)) #=> name is str class
+print(type(name))      #=> <class 'str'>
 
 words = name.split()
-print(words)
-print(type(words)) #=> words is list class
+print(words)           #=> ["Obiwan", "Kenobi"]
+print("_".join(words)) #=> "Obiwan_Kenobi"
 ```
 
 * Ejecutar con el "intérprete": `npython FILENAME`.
 
 ```bash
-$ npython examples/03-variables.py      
+$ npython examples/02-vars.py      
 4
 <class 'int'>
 Obiwan
