@@ -1,5 +1,7 @@
 # Dsl::Python
 
+[![Gem Version](https://badge.fury.io/rb/dsl-python.svg)](https://badge.fury.io/rb/dsl-python)
+
 ```
 DSL para hacer que Ruby "parezca" Python
 ```
