@@ -33,11 +33,12 @@ print("_".join(words)) #=> "Obiwan_Kenobi"
 * Ejecutar con el "intérprete": `npython FILENAME`.
 
 ```bash
-$ npython examples/02-vars.py      
-4
-<class 'int'>
-Obiwan
+$ npython examples/02-vars.py 
+
+Obiwan Kenobi
 <class 'str'>
+["Obiwan", "Kenobi"]
+<class 'list'>
 ```
 
 > Más [ejemplos](./examples/)
