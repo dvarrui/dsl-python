@@ -23,9 +23,15 @@ require_relative "python/version"
 def print(*args)
   if args.is_a? Array
     if args.count == 1
-      puts args.first
+      item = args.first
+      if item.is_a? Array
+        puts "#{item}"
+      else
+        puts item
+      end
     else
-      puts args.join " "
+      text = args.map { _1.to_s }.join " "
+      puts text
     end
   else
     puts(args)
