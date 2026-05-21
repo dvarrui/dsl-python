@@ -13,6 +13,7 @@ require_relative "python/types/integer"
 require_relative "python/types/none"
 require_relative "python/types/range"
 require_relative "python/types/string"
+require_relative "python/types/tuple"
 
 require_relative "python/functions/etc"
 require_relative "python/functions/import"

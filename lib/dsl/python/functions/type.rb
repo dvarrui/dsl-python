@@ -11,7 +11,8 @@ def type(x)
     NilClass: "NoneType",
     Range: "range",
     String: "str",
-    TrueClass: "bool"
+    TrueClass: "bool",
+    Tuple: "tuple"
   }
 
   "<class '#{types[key]}'>"
