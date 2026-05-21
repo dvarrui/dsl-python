@@ -53,6 +53,7 @@ Obiwan Kenobi
     - None
     - Ranges
     - Strings: `join`.
+    - Tuples: `tuple(1, 'a')`
 * Funciones comunes: `id`, `len`, `type`
 
 ## Contributing
