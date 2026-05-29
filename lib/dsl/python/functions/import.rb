@@ -5,15 +5,13 @@ require_relative "../repl/zen"
 $main_binding = binding
 
 def import(filename)
-  filename.to_s
+  return Dsl::Python.show_zen if filename.to_s == "this"
+  return Dsl::Python.show_zen(ofuscate: true) if filename.to_s == "that"
+
   dirbase = File.dirname($main_filepath)
   filepath = File.join(dirbase, filename + ".py")
 
-  if filename.to_s == "this"
-    Dsl::Python.show_zen
-  elsif filename.to_s == "that"
-    Dsl::Python.show_zen(ofuscate: true)
-  elsif File.exist? filepath
+  if File.exist? filepath
 
     content = File.read(filepath)
     eval(content, $main_binding)
