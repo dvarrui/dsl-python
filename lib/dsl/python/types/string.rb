@@ -8,7 +8,8 @@ class String
   def replace(a, b) = tr(a, b)
   def title = capitalize
   def upper = upcase
-
+  def __len__() = self.length
+  
   def __
     names = %w[
       str.__add__(             str.__getattribute__(    str.__le__(              str.__repr__()
@@ -23,4 +24,5 @@ class String
     ]
     Dsl::Python.puts_in_columns(names.sort)
   end
+
 end
