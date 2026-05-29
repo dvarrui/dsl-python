@@ -1,5 +1,11 @@
 ## [Unreleased]
 
+## [0.21.0] 2026-05-29
+
+- Tuplas
+- String `__len__`
+- Tipos
+
 ## [0.19.0] - 2026-05-18
 
 - Add: examples.
