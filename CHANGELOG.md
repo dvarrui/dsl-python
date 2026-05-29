@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [0.21.1] 2026-05-29
+
+- Fix import method
+
 ## [0.21.0] 2026-05-29
 
 - Tuplas
