@@ -60,9 +60,7 @@ Obiwan Kenobi
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/dvarrui/dsl-python.
 
-## ANEXO
-
-Enlaces de interés:
+## Proyectos relacionados
 
 * [dsl-clang](https://github.com/dvarrui/dsl-clang)
 * [dsl-graph](https://github.com/dvarrui/dsl-graph)
